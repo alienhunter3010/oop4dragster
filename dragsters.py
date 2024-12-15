@@ -15,7 +15,7 @@ path_len = int(coc_arg(1, 1000))
 race = Race(
     render = Render(path_len, 200),
     path_len = path_len,
-    ffwd = int(sys.argv[2].replace("x", "")) if len(sys.argv) > 2 else 1
+    ffwd = int(coc_arg(2, 1).replace('x', ''))
 )
 
 race.with_player(
