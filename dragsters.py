@@ -1,6 +1,6 @@
-from lib.vehicle import Vehicle
-from lib.render import Render
-from lib.race import Race
+from libs.vehicle import Vehicle
+from libs.render import Render
+from libs.race import Race
 import sys
 
 path_len = int(sys.argv[1]) if len(sys.argv) > 1 else 1000
