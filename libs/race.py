@@ -1,16 +1,17 @@
 import time
+from libs.players import Players
 
 
-class Race:
+class Race(Players):
     def __init__(self, render, path_len, ffwd=1):
+        super().__init__()
         self.render = render
         self.path_len = path_len
-        self.vehicles = []
         self.ffwd = ffwd
 
     def with_player(self, vehicle):
-        self.vehicles.append(vehicle)
-        self.render.add_player(vehicle)
+        super().with_player(vehicle)
+        self.render.with_player(vehicle)
         return self
 
     def run(self):
