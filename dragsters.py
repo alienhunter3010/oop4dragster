@@ -5,7 +5,7 @@ import sys
 
 
 def coc_arg(idx, default):
-    if len(sys.argv) >= idx:
+    if len(sys.argv) >= idx + 1:
         return sys.argv[idx]
     return default
 
