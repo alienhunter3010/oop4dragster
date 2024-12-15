@@ -1,6 +1,8 @@
+# Classe
 class Vehicle:
     # Costruttore
     def __init__(self, name, acceleration, max_velocity, img="[( )]"):
+        # Proprietà (Variabile)
         self.name = name
         self.acceleration = acceleration
         self.max_velocity = max_velocity
@@ -8,7 +10,7 @@ class Vehicle:
         self.position = 0  # in m
         self.img = img
 
-    # Metodo
+    # Metodo (funzione)
     def update(self):
         self.cur_velocity = min(self.cur_velocity + self.acceleration, self.max_velocity)
         self.position += self.cur_velocity

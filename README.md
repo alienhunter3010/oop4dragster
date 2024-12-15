@@ -19,7 +19,7 @@ Target: learning OOP for people that has no programmer experinces
 To keep this example project _quick and easy_ to learn we omitted some steps on a just init project.
 
 * Any third-part dependency
-* Any Virtul Environment logic
+* Any Virtual Environment logic
 
 ## Coding during lesson
 Add a FastForward option on the Race class (the game will be less boring!).
@@ -35,3 +35,8 @@ python dragster.py 10000 4x  # using ffwd option (to be written!)
 ## If you don't like to code during the lesson (todo)
 
 **extending class**, **static properties** and **ffwd option** will be isolated into dedicated git branch.
+
+* step-00 like the main branch
+* step-01 introducing ffwd
+* step-02 introducing inheritance
+* step-03 introducing static properties

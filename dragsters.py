@@ -4,20 +4,26 @@ from libs.race import Race
 import sys
 
 
+# Funzione
 def coc_arg(idx, default):
-    if len(sys.argv) >= idx:
+    # Condizione
+    if len(sys.argv) >= idx + 1:
         return sys.argv[idx]
-    return default
+    else:
+        return default
 
-
+# Istruzione
+# (Assegnazione di) Variabile
 path_len = int(coc_arg(1, 1000))
 
+# Oggetto (istanza)
 race = Race(
     render = Render(path_len, 200),
     path_len = path_len,
-    ffwd = int(coc_arg(2, 1).replace('x', ''))
+    ffwd = int(coc_arg(2, "1x").replace('x', ''))
 )
 
+# Chiamata a un Metodo
 race.with_player(
         Vehicle("Audi", acceleration=3, max_velocity=50)
     ).with_player(
