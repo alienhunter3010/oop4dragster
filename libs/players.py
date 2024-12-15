@@ -1,6 +1,8 @@
 class Players:
+    vehicles = []
+
     def __init__(self):
-        self.vehicles = []
+        pass
 
     def with_player(self, vehicle):
         self.vehicles.append(vehicle)

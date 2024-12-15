@@ -1,7 +1,5 @@
 import time
 
-from typing_extensions import override
-
 from libs.players import Players
 
 
@@ -11,13 +9,6 @@ class Race(Players):
         self.render = render
         self.path_len = path_len
         self.ffwd = ffwd
-
-    @override
-    def with_player(self, vehicle):
-        # Chiamata al metodo originale (del padre)
-        super().with_player(vehicle)
-        self.render.with_player(vehicle)
-        return self
 
     def run(self):
         duration = 0
