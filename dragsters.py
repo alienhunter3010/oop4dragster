@@ -3,7 +3,14 @@ from libs.render import Render
 from libs.race import Race
 import sys
 
-path_len = int(sys.argv[1]) if len(sys.argv) > 1 else 1000
+
+def coc_arg(idx, default):
+    if len(sys.argv) >= idx:
+        return sys.argv[idx]
+    return default
+
+
+path_len = int(coc_arg(1, 1000))
 
 race = Race(
     render = Render(path_len, 200),
