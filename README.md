@@ -8,8 +8,8 @@ Target: learning OOP for people that has no programmer experinces
 
 * Structured code / OOP code
 * Some simple classes rappresentation
-* Extending classes (todo)
-* Static properties (todo)
+* Extending classes
+* Static properties
 * Fluent syntax
 * Dependencies injection (you can avoid this from a basic lesson)
 * Single Responsability (recommended, but you can avoid this)
