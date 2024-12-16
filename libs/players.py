@@ -1,10 +1,8 @@
 class Players:
-    vehicles = []
 
     def __init__(self):
-        pass
+        self.vehicles = []
 
-    @staticmethod
-    def with_player(vehicle):
-        Players.vehicles.append(vehicle)
-        return Players
+    def with_player(self, vehicle):
+        self.vehicles.append(vehicle)
+        return self
