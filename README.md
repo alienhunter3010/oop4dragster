@@ -29,10 +29,10 @@ Add a FastForward option on the Race class (the game will be less boring!).
 ```bash
 python dragster.py
 python dragster.py 10000     # Solar Wind wins :D
-python dragster.py 10000 4x  # using ffwd option (to be written!)
+python dragster.py 10000 4x  # using ffwd option
 ```
 
-## If you don't like to code during the lesson (todo)
+## If you don't like to code during the lesson
 
 **extending class**, **static properties** and **ffwd option** will be isolated into dedicated git branch.
 
