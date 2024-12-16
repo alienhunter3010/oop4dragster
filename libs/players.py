@@ -4,6 +4,7 @@ class Players:
     def __init__(self):
         pass
 
-    def with_player(self, vehicle):
-        self.vehicles.append(vehicle)
-        return self
+    @staticmethod
+    def with_player(vehicle):
+        Players.vehicles.append(vehicle)
+        return Players
