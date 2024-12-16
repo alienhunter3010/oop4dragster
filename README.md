@@ -27,9 +27,9 @@ Add a FastForward option on the Race class (the game will be less boring!).
 ## Play
 
 ```bash
-python dragster.py
-python dragster.py 10000     # Solar Wind wins :D
-python dragster.py 10000 4x  # using ffwd option
+python dragsters.py
+python dragsters.py 10000     # Solar Wind wins :D
+python dragsters.py 10000 4x  # using ffwd option
 ```
 
 ## If you don't like to code during the lesson
